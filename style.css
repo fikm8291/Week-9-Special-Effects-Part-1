@@ -1,0 +1,84 @@
+/* Base Workspace Setup */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    padding: 30px;
+    background-color: #f0fdf4;
+    color: #14532d;
+    /* Smooth base transitions for theme shifting toggle */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom modifier class targeted via Task 1 JavaScript Toggling */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #38bdf8;
+}
+
+header {
+    border-bottom: 4px dashed #22c55e;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+#game-alert {
+    background-color: #16a34a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#arcade-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #22c55e;
+}
+
+body.dark-mode #arcade-container {
+    background: #1e293b;
+    border-color: #38bdf8;
+}
+
+#game-controller {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #166534;
+    border-radius: 6px;
+    
+    /* Advanced Activity prerequisite layout mode */
+    position: relative; 
+    
+    /* Task 3 Prerequisite: Smooth transition setup goes here */
+}
+
+body.dark-mode #game-controller {
+    border-color: #38bdf8;
+}
+
+.control-panel {
+    margin: 15px 0;
+}
+
+button {
+    background-color: #22c55e;
+    color: #ffffff;
+    border: 2px solid #166534;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+body.dark-mode button {
+    background-color: #0369a1;
+    border-color: #38bdf8;
+}
+
+/* Task 3: Learners will write their custom .grow-effect class below this point */
